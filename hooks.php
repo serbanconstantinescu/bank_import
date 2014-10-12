@@ -15,8 +15,8 @@ class hooks_bank_import extends hooks {
 	    case 'GL':
 		$app->add_lapp_function(0, _("Process Bank Statements"),
 			$path_to_root."/modules/".$this->module_name."/process_statements.php", 'SA_BANKACCOUNT', MENU_TRANSACTION);
-//		$app->add_lapp_function(2, _("Manage Customer Bank Accounts"),
-//			$path_to_root."/modules/".$this->module_name."/cust_bank_accounts.php", 'SA_CUSTOMER', MENU_MAINTENANCE);
+		$app->add_lapp_function(2, _("Manage Partners Bank Accounts"),
+			$path_to_root."/modules/".$this->module_name."/manage_partners_data.php", 'SA_CUSTOMER', MENU_MAINTENANCE);
 		$app->add_lapp_function(2, _("Import Bank Statements"),
 			$path_to_root."/modules/".$this->module_name."/import_statements.php", 'SA_BANKACCOUNT', MENU_MAINTENANCE);
 		$app->add_lapp_function(1, _("Bank Statements Inquiry"),

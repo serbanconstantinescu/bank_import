@@ -1,5 +1,6 @@
 DROP TABLE IF EXISTS `0_bi_statements`;
 DROP TABLE IF EXISTS `0_bi_transactions`;
+DROP TABLE IF EXISTS `0_bi_partners_data`;
 
 CREATE TABLE `0_bi_statements` (
     `id`			INTEGER NOT NULL AUTO_INCREMENT,
@@ -39,4 +40,13 @@ CREATE TABLE `0_bi_transactions` (
     `fa_trans_type`		INTEGER default 0,
     `fa_trans_no`		INTEGER default 0,
     PRIMARY KEY(`id`)
+);
+
+
+CREATE TABLE `0_bi_partners_data` (
+    `partner_id`		INTEGER,
+    `partner_detail_id`		INTEGER,
+    `partner_type`		INTEGER,
+    `data`			varchar(256),
+    CONSTRAINT `idx` UNIQUE(`partner_id`, `partner_detail_id`, `partner_type`)
 );

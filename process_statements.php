@@ -14,6 +14,7 @@ include_once($path_to_root . "/includes/data_checks.inc");
 
 
 include_once($path_to_root . "/modules/bank_import/includes/includes.inc");
+include_once($path_to_root . "/modules/bank_import/includes/pdata.inc");
 
 
 $js = "";
@@ -99,6 +100,7 @@ if (isset($_POST['ProcessTransaction'])) {
 		    //update trans with payment_id details
 		    if ($payment_id) {
 			update_transactions($tid, $_cids, $status=1, $payment_id, ST_SUPPAYMENT);
+			//update_partner_data();
 			display_notification('Supplier payment processed');
 		    }
 		break;
@@ -117,6 +119,7 @@ if (isset($_POST['ProcessTransaction'])) {
 		    //update trans with payment_id details
 		    if ($deposit_id) {
 			update_transactions($tid, $_cids, $status=1, $deposit_id, ST_BANKDEPOSIT);
+			//update_partner_data();
 			display_notification('Customer deposit processed');
 		    }
 		break;
@@ -292,6 +295,8 @@ if (1) {
 		    $tid = $trz['id'];
 		    $has_trz = 1;
 		    $amount = $trz['transactionAmount'];
+		    $fa_trz_type = $trz['fa_trans_type'];
+		    $fa_trz_no = $trz['fa_trans_no'];
 	    }
 	}
 	//if does not have trz aka just charge, take info from charge
@@ -308,6 +313,8 @@ if (1) {
 		    $status = $trz['status'];
 		    $tid = $trz['id']; // tid is from charge
 		    $amount += $trz['transactionAmount'];
+		    $fa_trz_type = $trz['fa_trans_type'];
+		    $fa_trz_no = $trz['fa_trans_no'];
 		}
 	    }
 	} else {
@@ -346,17 +353,21 @@ if (1) {
 	    label_row("Status:", "<b>Transaction is settled!</b>", "width='25%' class='label'");
     	    switch ($trz['fa_trans_type']) {
 		case ST_SUPPAYMENT:
-			label_row("Operation:", "Supplier Payment");
+			label_row("Operation:", "Payment");
+			// get supplier info
+			
 			//label_row("Supplier:", $minfo['supplierName']);
 			//label_row("From bank account:", $minfo['coyBankAccountName']);
 		break;
 		case ST_BANKDEPOSIT:
 			label_row("Operation:", "Deposit");
-			//label_row("Customer/Branch:", $minfo['customerName']."/".$minfo['branchName']);
-			//label_row("Into bank account:", $minfo['coyBankAccountName']);
+			//get customer info from transaction details
+			$fa_trans = get_customer_trans($fa_trz_no, $fa_trz_type);
+			label_row("Customer/Branch:", get_customer_name($fa_trans['debtor_no']) . " / " . get_branch_name($fa_trans['branch_code']));
 		break;
 		case 0:
 			label_row("Operation:", "Manual settlement");
+		break;
 		default:
 			label_row("Status:", "other transaction type; no info yet");
 		break;
@@ -381,10 +392,25 @@ if (1) {
 	    switch($_POST['partnerType'][$tid]) {
 		//supplier payment
 		case 'SP':
+		    //propose supplier
+		    if (empty($_POST["partnerId_$tid"])) {
+			$match = search_partner_by_bank_account(PT_SUPPLIER, $bankAccount);
+			if (!empty($match)) {
+			    $_POST["partnerId_$tid"] = $match['partner_id'];
+			}
+		    }
 		    label_row(_("Payment To:"), supplier_list("partnerId_$tid", null, false, false));
 		    break;
 		//customer deposit
 		case 'CU':
+			//propose customer
+			if (empty($_POST["partnerId_$tid"])) {
+			    $match = search_partner_by_bank_account(PT_CUSTOMER, $bankAccount);
+			    if (!empty($match)) {
+				$_POST["partnerId_$tid"] = $match['partner_id'];
+				$_POST["partnerDetailId_$tid"] = $match['partner_detail_id'];
+			    }
+			}
 			$cust_text = customer_list("partnerId_$tid", null, false, true);
 			if (db_customer_has_branches($_POST["partnerId_$tid"])) {
 			    $cust_text .= customer_branches_list($_POST["partnerId_$tid"], "partnerDetailId_$tid", null, false, true, true);
