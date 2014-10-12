@@ -1,0 +1,293 @@
+
+:20:4368374100
+:25:RO27BRDE410SV09574144100
+:28:00136/3
+:60F:D100514EUR0,00
+:62F:D100516EUR0,00
+
+
+:20:4368374100
+:25:RO35BRDE410SV09678744100
+:28:00136/2
+:60F:C100514RON136,52
+:62F:C100516RON136,52
+
+
+:20:4368374100
+:25:RO78BRDE410SV80038774100
+:28:00136/1
+:60F:C100514RON11572,65
+:62F:C100516RON11572,65
+
+
+
+:OS:0400004471INFOBRD.TXT
+                                                                                17.05.2010
+
+Denumire   Cump. BPiata vVanz. BRD  17.05.2010  Cump. BRDa de Vanz. BRD   Cump. BRDburi vaVanz. BRD
+valuta
+USD        3.3510        3.4800       3.3633     3.3420        3.4890      1.1990         1.2561
+EUR        4.1270        4.2570       4.1814     4.1170        4.2670      1.0000         1.0000
+GBP        4.8100        4.9780       4.8785     4.7860        5.0020      0.8181         0.8951
+CHF        2.9390        3.0440       2.9853     2.9230        3.0610      1.3733         1.4293
+DKK        0.5535        0.5735       0.5621     0.5450        0.5770      7.1428         7.7380
+NOK        0.5325        0.5525       0.5402     0.5240        0.5550      7.3406         8.1132
+CAD        3.2190        3.3360       3.2749     3.2030        3.3710      1.2149         1.3427
+AUD        2.8680        3.1110       2.9996     2.9050        3.0720      1.3187         1.4871
+SEK        0.4290        0.4445       0.4379     0.4220        0.4470      9.3576         9.8374
+HUF        1.4240        1.5660       1.5113     1.4070        1.5730    264.1600       291.9600
+CZK        0.1595        0.1675       0.1640     0.1560        0.1720     24.2800        26.8400
+PLN        1.0120        1.0650       1.0414     0.9890        1.0840      3.8342         4.2378
+JPY        3.4830        3.8710       3.6395     3.4680        3.8780    104.3100       121.2300
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Rate publicate        ROL                   USD        EUR         Rate publicate
+Perioada   BUBID         BUBOR    RATE       RATE REPO  RATE       RATE       LIBOR       EURIBOR
+                                  BRD*       BRD*       BRD*       BRD*       USD         EUR
+O/N          4.13%         4.63%    0.50%       -         0.10%      0.20%    0.002925
+1W           4.59%         5.09%    3.00%      3.00%      0.50%      1.00%    0.00315     0.00361
+1M           5.78%         6.28%    5.00%      5.00%      1.50%      2.25%    0.0033775   0.00423
+3M           5.95%         6.45%    5.25%      5.00%      1.60%      2.50%    0.0044506   0.00684
+6M           6.25%         7.00%    5.50%      5.25%      1.80%      2.75%    0.00635     0.00979
+12M          6.25%         7.00%    5.50%      5.25%      2.00%      3.00%    0.0110563   0.01242
+
+*-Dobanzile afisate se refera la sumele de peste 1 miliard pentru depozitele in lei respectiv de
+peste
+150 000 $ (sau echivalent) pentru depozitele in valuta si sunt fixe pe perioada constituirii
+depozitului
+**-Dobanzi valabile in spot ( in a doua zi lucratoare de la data publicarii lor )
+
+
+CURSURI FORWARD ( LA TERMEN )
+
+Perioada   1 saptamana            2 saptamani           1 luna                3 luni
+Valuta     Cump. BRD     Vanz. BRDCump. BRD  Vanz. BRD  Cump. BRD  Vanz. BRD  Cump. BRD   Vanz. BRD
+USD        3.351         3.48     3.3511     3.4801     3.3512     3.4801     3.3515      3.4804
+EUR        4.1276        4.25859994.1282999994.2601     4.1297     4.2637     4.135       4.276999999
+GBP        4.8104999999994.9796   4.811      4.9811     4.8121     4.9847     4.81619999994.9981
+CHF        2.9396        3.0452   2.9401     3.0465     2.9414     3.0493     2.9463      3.0599
+SEK        0.4291        0.4447   0.4291     0.4448     0.4293     0.4452     0.4299      0.4467
+
+
+
+
+
+
+
+
+
+* #VALUE!
+* "Ratele dobanzilor au fost de 1/3% pentru depozitele overnight si 6/8% pentru depozitele la saptamana.                                                       BNR nu a organizat vineri operatiuni de politica monetara pe baze multilaterale.                                                                 
+MFP nu a organizat vineri licitatii cu certificate de trezorerie.                                                                                                                                             "
+
+								
+Stimati Clienti,
+
+Incepand din 31 mai 2010 se va modifica adresa IP a server-ului MultiX. Pana la acea data comunicatia va functiona cu ambele adrese IP.
+
+Din 31 mai 2010 comunicatia va fi functionala doar prin intermediul noii adrese IP.
+Pentru a preintampina problemele ce pot aparea la comunicatie, va rugam sa contactati consilierul dvs de clientela pentru a va furniza  "Instructiunile de modificare a adresei de IP si DNS".
+
+Va multumim pentru intelegere,
+Echipa HelpDesk Cash Management
+021.601.45.45
+
+
+
+
+:OS:0400001150CURSBNR.TXT
+CURS BNR VALABIL IN ZIUA DE             18.05.2010
+
+DOLAR AUSTRALIA                         AUD            2.9818
+DOLAR CANADA                            CAD            3.2799
+FRANC ELVETIA                           CHF            2.9902
+COROANA DANEMARCA                       DKK            0.5629
+LIRA EGIPT                              EGP            0.6049
+EURO                                    EUR            4.1878
+LIRA STERLINA                           GBP            4.9052
+100 YENI JAPONIA                        JPY100         3.6827
+LEU MOLDOVA                             MDL            0.2652
+COROANA NORVEGIA                        NOK            0.5441
+COROANA SUEDIA                          SEK            0.4363
+1000 LIRE TURCIA                        TRL1000        0.4018
+DOLAR SUA                               USD            3.4018
+COROANA CEHIA                           CZK            0.164
+FORINT UNGARIA                          HUF            1.509
+ZLOT POLONIA                            PLN            0.0436
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:20:4368374100
+:25:RO27BRDE410SV09574144100
+:28:00137/3
+:60F:D100517EUR0,00
+:62F:D100517EUR0,00
+
+
+:20:4368374100
+:25:RO35BRDE410SV09678744100
+:28:00137/2
+:60F:C100517RON136,52
+:62F:C100517RON136,52
+
+
+:20:4368374100
+:25:RO78BRDE410SV80038774100
+:28:00137/1
+:60F:C100517RON11572,65
+:61:1005170517C13373,33NTRFOPH8301260
+/ROC/FF 10472/03.05.2010 FF 10479/10.05.2010 //RFB/186
+:86:000+20Incasare        +31RO74ABNA4155555555555556
++32SC COMPANY SRL XXXXXXXX+33/
++23/ROC/FF 10472/03.05.2010 FF
++24 10479/10.05.2010 //RFB/186
+:61:1005170517D7,00NCOMOPH8301260
+04-Comision
+:86:000+20Comision
++2304-Comision
+:62F:C100517RON24938,98
+
+
+
+:OS:0400004463INFOBRD.TXT
+                                                                                18.05.2010
+
+Denumire   Cump. BPiata vVanz. BRD  18.05.2010  Cump. BRDa de Vanz. BRD   Cump. BRDburi vaVanz. BRD
+valuta
+USD        3.3310        3.4600       3.4018     3.3220        3.4690      1.2069         1.2643
+EUR        4.1300        4.2600       4.1878     4.1200        4.2700      1.0000         1.0000
+GBP        4.8250        4.9930       4.9052     4.8010        5.0170      0.8161         0.8931
+CHF        2.9390        3.0450       2.9902     2.9230        3.0610      1.3740         1.4300
+DKK        0.5535        0.5735       0.5629     0.5450        0.5770      7.1428         7.7380
+NOK        0.5340        0.5535       0.5441     0.5250        0.5570      7.3309         8.1025
+CAD        3.2290        3.3470       3.2799     3.2130        3.3810      1.2118         1.3394
+AUD        2.8450        3.0860       2.9818     2.8820        3.0480      1.3303         1.5001
+SEK        0.4305        0.4460       0.4363     0.4240        0.4490      9.3301         9.8085
+HUF        1.4240        1.5640       1.5090     1.4060        1.5720    264.4500       292.2900
+CZK        0.1600        0.1675       0.1640     0.1560        0.1720     24.2400        26.8000
+PLN        1.0160        1.0690       1.0436     0.9930        1.0890      3.8209         4.2231
+JPY        3.4380        3.8220       3.6827     3.4240        3.8290    105.7500       122.8900
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Rate publicate        ROL                   USD        EUR         Rate publicate
+Perioada   BUBID         BUBOR    RATE       RATE REPO  RATE       RATE       LIBOR       EURIBOR
+                                  BRD*       BRD*       BRD*       BRD*       USD         EUR
+O/N          4.52%         5.02%    0.50%       -         0.10%      0.20%    0.003
+1W           4.92%         5.42%    3.00%      3.00%      0.50%      1.00%    0.0031875   0.00361
+1M           5.80%         6.30%    5.00%      5.00%      1.50%      2.25%    0.0033894   0.00423
+3M           5.96%         6.46%    5.25%      5.00%      1.60%      2.50%    0.0046      0.00685
+6M           6.26%         7.01%    5.50%      5.25%      1.80%      2.75%    0.0065475   0.00981
+12M          6.26%         7.01%    5.50%      5.25%      2.00%      3.00%    0.0111938   0.01246
+
+*-Dobanzile afisate se refera la sumele de peste 1 miliard pentru depozitele in lei respectiv de
+peste
+150 000 $ (sau echivalent) pentru depozitele in valuta si sunt fixe pe perioada constituirii
+depozitului
+**-Dobanzi valabile in spot ( in a doua zi lucratoare de la data publicarii lor )
+
+
+CURSURI FORWARD ( LA TERMEN )
+
+Perioada   1 saptamana            2 saptamani           1 luna                3 luni
+Valuta     Cump. BRD     Vanz. BRDCump. BRD  Vanz. BRD  Cump. BRD  Vanz. BRD  Cump. BRD   Vanz. BRD
+USD        3.331         3.46     3.3311     3.4601     3.3312     3.4601     3.3315      3.4604
+EUR        4.1307        4.2616   4.1314     4.2631999994.1329     4.2669     4.1388      4.2808
+GBP        4.8255        4.9946   4.8260000004.9962     4.8272     4.9999     4.8316      5.0136
+CHF        2.9396        3.0462   2.9401     3.0475     2.9414     3.0503     2.9463      3.0609
+SEK        0.4306        0.4462   0.4306     0.4463     0.4308     0.4467     0.4314      0.4482
+
+
+
+
+
+
+
+
+
+* #VALUE!
+* "Ratele dobanzilor au fost de 1/3% pentru depozitele overnight si 6/8% pentru depozitele la saptamana.                                                       BNR nu a organizat vineri operatiuni de politica monetara pe baze multilaterale.                                                                 
+MFP nu a organizat vineri licitatii cu certificate de trezorerie.                                                                                                                                             "
+
+								
+Stimati Clienti,
+
+Incepand din 31 mai 2010 se va modifica adresa IP a server-ului MultiX. Pana la acea data comunicatia va functiona cu ambele adrese IP.
+
+Din 31 mai 2010 comunicatia va fi functionala doar prin intermediul noii adrese IP.
+Pentru a preintampina problemele ce pot aparea la comunicatie, va rugam sa contactati consilierul dvs de clientela pentru a va furniza  "Instructiunile de modificare a adresei de IP si DNS".
+
+Va multumim pentru intelegere,
+Echipa HelpDesk Cash Management
+021.601.45.45
+
+
