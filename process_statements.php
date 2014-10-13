@@ -100,7 +100,7 @@ if (isset($_POST['ProcessTransaction'])) {
 		    //update trans with payment_id details
 		    if ($payment_id) {
 			update_transactions($tid, $_cids, $status=1, $payment_id, ST_SUPPAYMENT);
-			//update_partner_data();
+			update_partner_data($partner_id = $_POST["partnerId_$k"], $partner_type = PT_SUPPLIER, $partner_detail_id = ANY_NUMERIC, $account = $trz['account']);
 			display_notification('Supplier payment processed');
 		    }
 		break;
@@ -119,7 +119,7 @@ if (isset($_POST['ProcessTransaction'])) {
 		    //update trans with payment_id details
 		    if ($deposit_id) {
 			update_transactions($tid, $_cids, $status=1, $deposit_id, ST_BANKDEPOSIT);
-			//update_partner_data();
+			update_partner_data($partner_id = $_POST["partnerId_$k"], $partner_type = PT_CUSTOMER, $partner_detail_id = $_POST["partnerDetailId_$k"], $account = $trz['account']);
 			display_notification('Customer deposit processed');
 		    }
 		break;

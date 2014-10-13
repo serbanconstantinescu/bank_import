@@ -42,5 +42,14 @@ function search_partner_by_bank_account($partner_type, $needle) {
 }
 
 //in development
-function update_partner_data() {
+function update_partner_data($partner_id, $partner_type, $partner_detail_id, $account) {
+    $account_n = "\n" . $account;
+    $sql = "
+	INSERT INTO ".TB_PREF."bi_partners_data(partner_id, partner_type, partner_detail_id, data) VALUES(".
+	    db_escape($partner_id).",".db_escape($partner_type).",".db_escape($partner_detail_id).",".db_escape($account).")
+	ON DUPLICATE KEY UPDATE
+	    data=CONCAT(data, ".db_escape($account_n) . ")";
+//    display_notification($sql);
+    db_query($sql, 'Could not update partner');
+
 }
