@@ -77,7 +77,7 @@ class mt940_parser extends parser {
      * actual parsing of the data
      * @return array
      */
-    function parse($string, $debug=false) {
+    function parse($string, $static_data = array(), $debug=false) {
 	// trim spaces
 	$string = trim($string);
 	//remove any MSDOS newlines

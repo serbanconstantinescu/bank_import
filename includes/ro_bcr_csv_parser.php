@@ -4,7 +4,7 @@
 
 class ro_bcr_csv_parser extends parser {
 
-    function parse($content, $debug = true) {
+    function parse($content, $static_data = array(), $debug = true) {
 	//keep statements in an array, hashed by statement-id
 	//statement id is the statement date: yyyy-mm-dd-<number>-<seq>
 	// as each line is processed, adjust statement data and add tranzactions

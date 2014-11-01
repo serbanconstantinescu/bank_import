@@ -12,13 +12,13 @@ require 'ro_brd_mt940_parser.php';
 
 
 
-$parser = new ro_ing_csv_parser;
-$content = file_get_contents('statement_ro_ing_csv.csv');
-$static_data = array('account' => 'sadfadadasdasdas', 'currency' => 'RON');
+//$parser = new ro_ing_csv_parser;
+//$content = file_get_contents('statement_ro_ing_csv.csv');
+//$static_data = array('account' => 'sadfadadasdasdas', 'currency' => 'RON');
 
-//$parser = new ro_bcr_csv_parser;
-//$content = file_get_contents('statement_ro_bcr_csv.csv');
-//$static_data = array();
+$parser = new ro_bcr_csv_parser;
+$content = file_get_contents('statement_ro_bcr_csv.csv');
+$static_data = array();
 
 //$parser = new ro_brd_mt940_parser;
 //$content = file_get_contents('statement_ro_brd_mt940.sta');

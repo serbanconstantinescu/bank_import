@@ -72,16 +72,19 @@ class transaction extends banking_base {
 	    foreach($vars as $var) {
 		if ($this->$var == "") {
 	    	    if ($debug)
-	    		echo "transaction: validate: $var is empty\n";
+	    		echo "$var is empty\n";
 		    return false;
 		}
 	    }
 	    //aditional
 	    if ($this->transactionType == 'XXX') {
 	    	if ($debug)
-	    	    echo "transaction: validate: unknown transaction type: `XXX`\n";
+	    	    echo "unknown transaction type: `XXX`\n";
 		return false;
 	    }
+	    if ($debug)
+		echo "ok\n";
+		
 	    return true;
 	}
 }
@@ -122,11 +125,13 @@ class statement extends banking_base {
 	    $vars = array('bank', 'account', 'startBalance', 'endBalance', 'currency', 'timestamp', 'number', 'sequence', 'statementId');
 	    foreach($vars as $var) {
 		if ($this->$var == "") {
-	    	    if ($debug) echo "transaction: validate: $var is empty\n";
+	    	    if ($debug) echo "statement: validate: $var is empty\n";
 		    return false;
 		}
 	    }
-	    foreach($this->transactions as $trz) {
+	    foreach($this->transactions as $id => $trz) {
+		if ($debug)
+		    echo "  transaction #$id:";
 		if (!$trz->validate($debug))
 		    return false;
 	    }
